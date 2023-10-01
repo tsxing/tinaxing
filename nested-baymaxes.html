@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nested Baymaxes</title>
+</head>
+
+<body>
+  <h1>Nested Baymaxes</h1>
+  <h2>Problem Statement</h2>
+  <p>
+    Suppose function baymax(n) = a string composed of 2^n "o"s, and 2(2n-1) dashes (-) in the arrangement of a baymax (o--o). This means,<br>
+    baymax(1) = (o--o) <br>
+    baymax(2) = ((o--o)--(o--o)) <br>
+    baymax(3) = (((o--o)--(o--o))--((o--o)--(o--o))) <br>
+    baymax(4) = ((((o--o)--(o--o))--((o--o)--(o--o)))--(((o--o)--(o--o))--((o--o)--(o--o)))) <br>
+    and so on. <br>
+
+    Given n (n>0), write a function to find baymax(n). 
+  </p>
+  <h2>Solution:</h2>
+  <input id = "input" type="text" placeholder="Enter integer n>0" autocomplete="off">
+
+
+  
+  <button id="submit" onclick="run()">Submit</button>
+  <h3>Output:</h3>
+  <p id="output"></p>
+  <h3>Code:</h3>
+  <p>Notice the webpage lags and crash when entered N greater than around 20. </p>
+  <pre>
+  var answer = "(o--o)";
+  var n = document.getElementById("input").value;
+  cnt = 1;
+  while (cnt&lt;n){
+    answer = "("+answer+"--"+answer+")"
+    cnt++;
+  }
+  </pre>
+  Is there a way to solve this but with improved time complexity, or is it just that the outputted string is very long? Do let me know if you find a solution. <br>
+  
+
+</body>
+
+</html>
+
+<style>
+  body {
+  height: 100%;
+  width: 100%;
+  padding: 75px;
+}
+  
+</style>
+
+<script>
+  function run(){
+  var answer = "(o--o)";
+  var n = document.getElementById("input").value;
+  cnt = 1;
+  while (cnt<n){
+    answer = "("+answer+"--"+answer+")"
+    cnt++;
+  }
+  document.getElementById("output").innerHTML=answer;
+}
+
+
+var input = document.getElementById("input");
+
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    document.getElementById("submit").click();
+  }
+});
+
+</script>
