@@ -20,7 +20,54 @@
   </div>
   <div class="row banner">
     <div class="column-left">
-      <img width="300px" src="pfp.png">
+        <div id="mydiv" class="container">
+            <div class="hair-base"></div>
+            <div class="hair-misc"></div>
+            <div class="hair-bangs"></div>
+            <div class="hair-bangs-shadow"></div>
+    
+            <div class="hair-bangs2"></div>
+    
+            <div class="head"></div>
+    
+            <div class="ears ears-left"></div>
+            <div class="ears ears-right"></div>
+    
+            <div class="ears-in ears-in-left"></div>
+            <div class="ears-in ears-in-right"></div>
+    
+    
+            <div class="neck"></div>
+    
+            <div class="eyebrows eyebrow-right"></div>
+            <div class="eyebrows eyebrow-left"></div>
+            
+            <div class="eyes eye-right"></div>
+            <div class="eyes eye-left"></div>
+    
+            <div class="nose"></div>
+            <div class="cheeks cheek-left"></div>
+            <div class="cheeks cheek-right"></div>
+    
+    
+            <div class="mouth">
+                <div class="lip-line"></div>
+                <div class="lips"></div>
+            </div>
+    
+    
+            <div class="shirt"></div>
+            <div class="arms arms-left"></div>
+            <div class="arms arms-right"></div>
+            <div class="pockets pockets-left"></div>
+            <div class="pockets pockets-right"></div>
+    
+            <div class="arm-spaces arm-spaces-left"></div>
+            <div class="arm-spaces arm-spaces-right"></div>
+            
+    
+        </div>
+
     </div>
     <div class="column-right">
       <p style="color: #9999a1;">High School Student</p>
@@ -155,3 +202,522 @@
 </body>
 
 </html>
+
+
+
+<style>
+    /* fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    overscroll-behavior-y: none;
+    transition: 0.3s;
+}
+html {
+    height: 100%;
+    width: 100%;
+    line-height: 1.6; 
+    font-family: 'Lato', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+.topnav{
+    padding: 14px 32px; 
+    display: flex; 
+    justify-content: right;
+    position: sticky;
+    top: 0; 
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    z-index: 20;
+}
+.topnav a{
+    text-decoration: none;
+    color: #66666e; 
+    padding: 14px 28px; 
+    transition: 0.3s;
+}
+.topnav a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 32px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #66666e;
+  transition: 0.3s;
+}
+.bold, strong{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white ;
+  padding: 5px 8px 5px 8px;
+  line-height: 2;
+  font-family: 'Lato', sans-serif;
+}
+.bold:hover{
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+
+.banner{
+  padding-top: 100px;
+  padding-right: 150px;
+}
+.banner img{
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.column-right{
+  float: left; 
+  width: 50%; 
+  padding: 50px 25px; 
+  background-color: white;
+  border-radius: 20%;
+
+}
+
+.column-left{
+  float: left; 
+  width: 50%; 
+  padding-top: 10px; 
+  padding-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+.section{
+  padding: 100px 200px 25px 200px;
+}
+
+ul{
+    list-style-type: circle; 
+}
+
+
+
+@media (max-width: 720px) {
+    .topnav{
+        padding: 14px 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section{
+        padding: 25px 50px 25px 50px;
+    }
+    .column-right{
+        width: 100%;
+    }
+    }
+
+
+    .container{
+        background-color: transparent;
+        height: 500px;
+        width: 500px;
+        position: relative;
+        left: -80px;
+        top: -150px;
+        
+    }
+
+    .container:hover{
+        cursor: pointer;
+    }
+    .hair-base{
+        position: absolute;
+        top: 160px;
+        left: 160px;
+        height: 250px;
+        border-radius: 40%;
+        width: 180px;
+        background-color: black;
+        clip-path: inset(0 0 50px 0);
+        z-index: 0;
+        box-shadow: 5px 4px 5px rgb(101, 101, 101) inset,
+        -3px 4px 5px rgb(101, 101, 101) inset;
+    }
+    .hair-misc{
+        position: absolute;
+        top: 290px;
+        left: 155px;
+        height: 80px;
+        border-radius: 50% 50% 30% 30%;
+        width: 190px;
+        background-color: black;
+        box-shadow:  3px -5px 4px rgb(101, 101, 101) inset,
+        -3px -3px 4px rgb(101, 101, 101) inset;
+
+    }
+    .hair-bangs{
+        position: absolute;
+        top: 192px;
+        left: 183px;
+        border-radius: 0 0 0% 80%;
+        width: 85px;
+        height: 60px;
+        background-color: black;
+        z-index: 3;
+        clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+        rotate: -62deg;
+        box-shadow: -2px 2px 2px rgba(47, 35, 25, 0.233);
+        
+    }
+
+    .hair-bangs2{
+        position: absolute;
+        top: 187px;
+        left: 250px;
+        border-radius: 0 0 0% 80%;
+        width: 85px;
+        height: 60px;
+        background-color: black;
+        z-index: 3;
+        clip-path: polygon(0% 100%, 0% 0%, 30% 0%, 100% 100%);
+
+        rotate: 10deg;
+
+        box-shadow: -2px 2px 2px rgba(47, 35, 25, 0.233);
+    }
+
+
+
+    .head{
+        height: 150px;
+        width: 130px;
+        border-radius: 40%;
+        background: linear-gradient(28deg, rgb(248, 196, 173) 37%, rgb(248, 213, 195) 94%);
+        
+        position: absolute;
+        top: 200px;
+        left: 185px;
+        z-index: 2;
+        box-shadow: 0px 3px 1px rgb(214, 146, 121),
+        15px 10px 20px rgb(235, 160, 120) inset,
+        -10px 10px 20px rgb(210, 145, 98) inset;
+        animation: nod 4s linear infinite;
+        
+    }
+
+    @keyframes nod{
+        25%{
+            top: 200px;
+        }
+        50%{
+            top: 203px;
+        }
+
+    }
+    .ears{
+        background: linear-gradient(28deg, rgb(236, 175, 137) 37%, rgb(243, 168, 133) 94%);
+        height: 40px;
+        width: 30px;
+        border-radius: 45%;
+        position: absolute;
+    }
+    .ears-left{
+        top: 250px;
+        left: 170px;
+
+    }
+    .ears-right{
+        top: 250px;
+        left: 298px;
+
+    }
+    .ears-in{
+        background: linear-gradient(198deg, rgb(246, 168, 129) 32%, rgb(225, 154, 103) 94%);        height: 40px;
+        width: 30px;
+        height: 30px;
+        border-radius: 45%;
+        position: absolute;
+        top: 255px;
+        z-index: 1;
+        
+    }
+
+    .ears-in-left{
+        left: 176px;
+        box-shadow: 3px 3px 4px rgba(47, 35, 25, 0.233),
+        2px 4px 4px rgb(217, 130, 101) inset;
+    }
+    .ears-in-right{
+        left: 292px;
+        box-shadow: 2px 4px 4px rgb(214, 113, 79) inset;
+        
+    }
+
+    .neck{
+        height: 94px;
+        width: 55px;
+        border-radius: 20%;
+        background: linear-gradient(198deg, rgb(229, 146, 101) 32%, rgb(236, 174, 141) 94%);
+        
+        position: absolute;
+        top: 295px;
+        left: 225px;
+        z-index: 1;
+        box-shadow: 0px 5px 2px 	 #e34f97;
+    }
+    .eyes{
+        background: radial-gradient(circle, rgb(42, 42, 42) 22%,rgb(37, 37, 37) 32%, rgba(0,0,0,1) 84%);        
+        height: 18px;
+        width: 15px;
+        position: absolute;
+        border-radius: 50%;
+        top: 263px;
+        z-index: 3;
+        animation: blink 2s linear infinite;
+        
+    }
+    .eye-right{
+
+        left: 220px;
+        box-shadow: -2px 2px 3px rgba(47, 35, 25, 0.233),
+            -4px -4px 0px rgb(0, 0, 0) inset;
+        
+    }
+
+    .eye-left{
+        left: 280px;
+        box-shadow: 0px 2px 3px rgba(47, 35, 25, 0.233),
+        -4px -4px 0px rgb(0, 0, 0) inset;
+    }
+
+    @keyframes blink{
+        0%, 5%, 20%, 30%, 95%, 100% {
+            height: 18px; 
+        }
+        25% {
+            height: 5px; /*  closed */
+            top: 265px;
+        }
+    }
+
+
+    .eyebrows{
+        height: 5px;
+        width: 30px;
+        border-radius: 40% 20%;
+        position: absolute;
+        top: 250px;
+        background-color: rgb(54, 53, 53);
+        z-index: 3;
+    }
+
+    .eyebrow-right{
+        left: 272px;
+        box-shadow: 2px 2px 2px rgba(47, 35, 25, 0.233),
+        2px -2px 2px rgba(47, 35, 25, 0.233),
+        -1px -1px 2px rgb(0, 0, 0) inset;
+        
+    }
+
+    .eyebrow-left{
+        left: 211px;
+        box-shadow: -2px 2px 2px rgba(47, 35, 25, 0.233),
+        2px -2px 2px rgba(47, 35, 25, 0.233),
+        -1px -1px 2px rgb(0, 0, 0) inset;
+    }
+
+    .lip-line{
+        height: 2px;
+        width: 30px;
+        border-radius: 40% 40%;
+        background-color: rgb(175, 71, 71);
+        position: absolute;
+        top: 320px;
+        left: 237px;
+        rotate: 5deg;
+        z-index: 5;
+
+        box-shadow: 0px 1px 1px rgba(159, 58, 58, 0.879),
+            1px -1px 1px rgb(155, 40, 40) inset;
+
+    }
+
+    .lips{
+        height: 10px;
+        width: 20px;
+
+        border-top-left-radius: 40%;
+        border-top-right-radius: 40%;
+        border-bottom-left-radius: 70%;
+        border-bottom-right-radius: 70%;
+
+
+
+
+        background-color: rgb(216, 96, 96);
+        box-shadow: 0px 2px 2px rgba(162, 72, 72, 0.534);
+
+        position: absolute;
+        top: 317px;
+        left: 242px;
+        rotate: 5deg;
+
+        
+
+        z-index: 4;
+    }
+    .nose{
+    top: 292px;
+    left: 245px;
+    position: absolute;
+    border-radius: 30% 30% 50% 50%;
+    width: 20px;
+    height: 10px;
+    box-shadow: 2px 2px 2px rgb(228, 152, 114);
+    background: rgb(252, 188, 157);
+
+    z-index: 4;
+    animation: breathe 4s infinite;
+
+}
+@keyframes breathe{
+    25%,75%{
+        top: 292px;
+    }
+    50%{
+        top: 291px;
+    }
+}
+
+.cheeks{
+    height: 20px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 135, 135);
+    position: absolute;
+    top: 280px;
+    filter: blur(5px);
+        
+    z-index: 4;
+    opacity: 0.3;
+
+}
+.cheek-left{
+    left: 182px;
+    rotate: 5deg;
+}
+.cheek-right{
+    left: 285px;
+    rotate: -5deg;
+
+}
+
+.shirt{
+    position: absolute;
+    background-color: #ee91be;
+    border-radius: 30% 30% 30% 30%;
+    top: 380px;
+    left: 150px;
+    height: 220px;
+    width: 200px;
+    z-index: 0;
+}
+
+.arms{
+    position: absolute;
+    background-color: #ee91be;
+    border-radius: 40% 50% 30% 50%;
+    
+    
+
+    height: 170px;
+    width: 150px;
+    z-index: 0;
+    
+
+}
+.arms-right{
+    top: 390px;
+    left: 113px;
+    rotate: 45deg;
+    
+}
+.arms-left{
+    top: 390px;
+    left: 235px;
+    transform: scaleX(-1);
+    rotate: 135deg;
+
+}
+.pockets{
+    position: absolute;
+    top: 570px;
+    
+    background-color: 	 	 #e34f97;
+    z-index: 4;
+    height: 8px;
+    width: 45px;
+    border-color: 	 	 #e34f97 transparent transparent transparent;
+    border-radius: 100%/100px 70px 0 0;
+    rotate: 120deg;
+    left: 185px;
+    filter: blur(5px);
+}
+.pockets-left{
+    rotate: 120deg;
+    left: 185px;
+}
+.pockets-right{
+    rotate: 240deg;
+    left: 275px;
+}
+.arm-spaces{
+    /*width: 60px;
+    height: 20px;
+    background-color: #d06c9d;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    z-index: 6;
+    top: 470px;
+    box-shadow: 2px 4px 5px #d77ca8; */
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    
+    background-color: #b95184;
+    border-radius: 40%; /* Fully rounded */
+    clip-path: polygon(50% 100%, 100% 100%, 100% 50%);
+    filter: blur(5px);
+}
+.arm-spaces-left{
+    left: 170px;
+    rotate: 130deg;
+    top: 450px;
+
+}
+.arm-spaces-right{
+    left: 250px;
+    rotate: 320deg;
+    top: 450px;
+
+}
+</style>
